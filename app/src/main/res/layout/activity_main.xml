@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<EditText
+    android:id="@+id/username"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingStart="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="@drawable/back"
+    android:hint="Enter User Name"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxBackgroundMode="none"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:passwordToggleEnabled="true"
+        app:boxCornerRadiusBottomEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:background="@drawable/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:paddingStart="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/back"
+    android:layout_marginTop="30dp"
+    android:text="Login"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    />
+
+</LinearLayout>
